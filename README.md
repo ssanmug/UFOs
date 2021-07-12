@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# UFO Sighting Webpage
 
-You can use the [editor on GitHub](https://github.com/ssanmug/UFOs/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview of the analysis 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Purpose
 
-### Markdown
+The purpose of this analysis to assist Dana, a data journalist intrigued by UFOs, in creating a dynamic filtered table using JavaScript to sort through all data and descriptions of UFO sightings around the world. This table will be the main component of an engaging website using HTML for UFO enthusiasts curious about sightings near them. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The following report will outline the website and explain how to filter through the data based on user input. The report will also present any drawbacks and recommendations for further development of the website.
 
-```markdown
-Syntax highlighted code block
+## Results
 
-# Header 1
-## Header 2
-### Header 3
+### Instructions on how to search through the website
 
-- Bulleted
-- List
+1. To enter the website, click the below link. You will arrive at the home page for "UFO Sightings," displaying a jumbotron header and an article as a preface for your search. 
 
-1. Numbered
-2. List
+![home_page](home_page.png) 
 
-**Bold** and _Italic_ and `Code` text
+2. Scroll down to see the filter search table with five different parameters to finetune your search for more information on UFO sightings around the world. The parameters include date, city, state, country, and shape. 
 
-[Link](url) and ![Image](src)
-```
+![filter_search](filter_search.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+3. Filter your search by entering in any one of the search filter type boxes. In the below example, I typed "San Diego" into the City search bar to filter out all data except three rows of data describing three different sightings in San Diego. 
 
-### Jekyll Themes
+![one_filter](one_filter.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ssanmug/UFOs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+4. Continue to filter your search further by entering your search criteria into multiple boxes. For example, I typed "triangle" to filter my search further, resulting in one data entry fulfilling both the City and Shape search parameters. 
 
-### Support or Contact
+![two_filters](two_filters.png)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Summary
+
+### Drawbacks
+The filter search table is located on only one area of the webpage, sitting on top of the data table below. If my search criteria result in under 10 data entries, I can see both the search criteria and data entries without moving up and down the web page. However, if my search criteria result in a significant number of entries, losing sight of my original search filters. This drawback could result in users forgetting their search criteria while scrolling down to review the data, causing them to scroll up and down unnecessarily. 
+
+### Recommendations
+1. Create filters within the data table so that the header remains frozen while scrolling through the filtered data. 
+2. Use Python/Pandas to clean the data so that the Comments don't have unnecessary symbols or spelling mistakes. 
